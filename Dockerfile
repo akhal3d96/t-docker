@@ -5,7 +5,7 @@ WORKDIR /root
 COPY entrypoint.sh /bin/
 
 RUN apk add --no-cache g++ make &&\
-    gem install --no-ri --no-rdoc t twurl &&\
+    gem install --no-document t twurl &&\
     apk del g++ make &&\
     chmod +x /bin/entrypoint.sh
 
