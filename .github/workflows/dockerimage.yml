@@ -11,4 +11,4 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag t/3.1.0:$(echo VERSION)
+      run: docker build . --file Dockerfile --tag t/3.1.0:$(cat VERSION)
