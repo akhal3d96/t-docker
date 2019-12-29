@@ -22,7 +22,7 @@ Then in order to run it:
 
 `$ docker run -it  --volume /var/docker/t:/root/ t/3.1.0:1.0.0 t followers`
 
-It will authenticate you and save the access token for future references in `/var/docker/t`. You can change it, it's optional!
+It will authenticate you and save the access token for future refrences in `/var/docker/t`. You can change it, it's optional!
 
 
 You can also use it without writing long commands by adding `alias t="docker run -it  --volume /var/docker/t:/root/ t/3.1.0:1.0.0 t"` to your `.bashrc` or `.zshrc` files.
